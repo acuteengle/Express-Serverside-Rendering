@@ -17,7 +17,7 @@ app.post("/", function(req, res){
 	const subHeader = "pokemon/"
 
 	// Gets the fields from the front end form
-	var pokemonName = String(req.body.pokemonName);
+	var pokemonName = String(req.body.pokemonName).toLowerCase();
 
 	const url = urlHeader + subHeader + pokemonName;
 
