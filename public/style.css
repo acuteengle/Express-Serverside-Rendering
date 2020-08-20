@@ -1,0 +1,11 @@
+h1 {
+  text-align: center;
+}
+
+.inputContainer {
+  margin: auto;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
