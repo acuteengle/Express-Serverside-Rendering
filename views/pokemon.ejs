@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>My Local Pokedex</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="canvas">
+      <div class="resultContainer">
+        <h1><%= name %> (# <%= pokemonNumber %> )</h1>
+        <img src="<%= sprite %>" />
+        <h4>Height</h4>
+        <p><%= height %></p>
+        <h4>Weight</h4>
+        <p><%= weight %></p>
+        <h4>Types</h4>
+        <ul>
+          <% types.forEach(function(type){ %>
+          <li><%= type.type.name %></li>
+          <% }); %>
+        </ul>
+        <h4>Abilities</h4>
+        <ul>
+          <% abilities.forEach(function(ability){ %>
+          <li><%= ability.ability.name %></li>
+          <% }); %>
+        </ul>
+        <h4>Base Stats</h4>
+        <ul>
+          <% stats.forEach(function(stat){ %>
+          <li><%= stat.stat.name %>: <%= stat.base_stat %></li>
+          <% }); %>
+        </ul>
+      </div>
+      <form>
+        <input
+          type="button"
+          onClick="history.back(-1)"
+          value="Search for another Pokemon"
+          class="btn btn-info"
+        />
+      </form>
+    </div>
+  </body>
+</html>

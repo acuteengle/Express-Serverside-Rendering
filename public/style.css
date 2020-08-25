@@ -1,4 +1,12 @@
-h1 {
+.canvas {
+  width: 600px;
+  margin: 10px auto;
+  background-color: #DEDEDE;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+.title {
   text-align: center;
 }
 
