@@ -14,6 +14,7 @@
   <body>
     <div class="canvas">
       <div class="resultContainer">
+        <% if (found) { %>
         <h1><%= name %> (# <%= pokemonNumber %> )</h1>
         <img src="<%= sprite %>" />
         <h4>Height</h4>
@@ -38,6 +39,9 @@
           <li><%= stat.stat.name %>: <%= stat.base_stat %></li>
           <% }); %>
         </ul>
+        <%} else { %>
+        <p>No Results</p>
+        <% } %>
       </div>
       <form>
         <input
