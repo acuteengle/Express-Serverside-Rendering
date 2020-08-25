@@ -14,5 +14,15 @@
     "ejs": "^3.1.5",
     "express": "^4.17.1",
     "nodemon": "^2.0.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acuteengle/ServerSideRenderingPokedex.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/acuteengle/ServerSideRenderingPokedex/issues"
+  },
+  "homepage": "https://github.com/acuteengle/ServerSideRenderingPokedex#readme"
 }
